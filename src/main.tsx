@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { createRoot } from 'react-dom/client'
 import { BookOpen, Check, ChevronRight, Flame, Headphones, Home, LockKeyhole, Play, RotateCcw, Sparkles, Trophy, Volume2 } from 'lucide-react'
 import './styles.css'
 
@@ -100,5 +101,7 @@ function LessonView({ word, index, selected, quizDone, onSelect, onNext, onFinis
   }
   return <section className="lesson-screen"><div className="lesson-top"><button className="icon-button" onClick={onClose} aria-label="Cerrar lección"><RotateCcw size={18} /></button><div className="lesson-progress"><span style={{ width: `${((index + 1) / words.length) * 100}%` }} /></div><span className="step-count">{index + 1}/{words.length}</span></div><div className="lesson-content"><p className="eyebrow">PALABRA {String(index + 1).padStart(2, '0')}</p><h1>Di hola en<br /><em>kazajo.</em></h1><p className="lesson-instruction">Escucha, repite y descubre una palabra nueva.</p><div className="word-card"><div className="word-top"><span className="sound-label">PRONUNCIACIÓN</span><button className="sound-button" onClick={playWord} aria-label="Escuchar pronunciación"><Volume2 size={20} /></button></div><strong>{word.kazakh}</strong><span className="latin">{word.latin}</span><span className="translation">{word.spanish}</span><div className="wave"><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /><i /></div><small>{word.hint}</small></div><div className="question-block"><span className="mini-label">COMPRUEBA LO QUE APRENDISTE</span><h2>¿Qué significa <b>{word.kazakh}</b>?</h2><div className="answers"><button className={selected === 'Hola' ? 'answer correct' : 'answer'} onClick={() => onSelect('Hola')}>Hola {selected === 'Hola' && <Check size={17} />}</button><button className={selected === 'Adiós' ? 'answer wrong' : 'answer'} onClick={() => onSelect('Adiós')}>Adiós {selected === 'Adiós' && <span>×</span>}</button><button className="answer" onClick={() => onSelect('Por favor')}>Por favor</button></div>{selected === 'Adiós' && <p className="feedback wrong-text">Casi. Escucha una vez más y prueba otra opción.</p>}{quizDone && <p className="feedback">¡Muy bien! Ya tienes tu primer saludo.</p>}</div></div><button className="bottom-action" disabled={!quizDone} onClick={isLast ? onFinish : onNext}>{isLast ? 'Terminar lección' : 'Siguiente palabra'} <ChevronRight size={19} /></button></section>
 }
+
+createRoot(document.getElementById('root')!).render(<App />)
 
 export default App
