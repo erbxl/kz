@@ -2,6 +2,10 @@
 
 Aprende kazajo desde el móvil, paso a paso. Aplicación React + TypeScript + Vite.
 
+El curso incluye **53 lecciones, 11 temas y 159 preguntas**, con vocabulario,
+transliteración, notas de uso y repaso. El catálogo y las referencias de consulta
+están descritos en [Contenido del curso](docs/course-content.md).
+
 ## Desarrollo
 
 ```sh
@@ -42,3 +46,5 @@ python scripts/check_pages.py
 
 Requiere Python con Playwright y Chromium instalados. `scripts/check_ui.py`
 contiene las pruebas completas de navegación, lecciones y tamaños de pantalla.
+`python scripts/check_course.py` recorre las 53 lecciones de la compilación en
+`dist/` y comprueba todas las respuestas, los desbloqueos y el progreso.

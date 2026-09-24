@@ -61,6 +61,7 @@ with sync_playwright() as p:
             page.locator('.answer').filter(has_text=answer).click()
             page.locator('.lesson-action button').click()
         page.get_by_role('button', name='Seguir aprendiendo').click()
+    page.get_by_label('Explorar por tema').select_option('1')
     expect(page.locator('.path-item.completed')).to_have_count(3)
     page.get_by_role('button', name='Repasar', exact=True).click()
     expect(page.locator('.vocabulary-word')).to_have_count(9)

@@ -1,0 +1,1486 @@
+[
+  {
+    "id": 1,
+    "title": "Saludos esenciales",
+    "description": "Una conversación empieza con un hola.",
+    "glyph": "Сә",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Сәлем",
+        "latin": "Sälem",
+        "spanish": "Hola",
+        "note": "Un saludo informal para amigos y personas cercanas."
+      },
+      {
+        "kazakh": "Рахмет",
+        "latin": "Raqmet",
+        "spanish": "Gracias",
+        "note": "Una pequeña palabra que abre muchas puertas."
+      },
+      {
+        "kazakh": "Иә",
+        "latin": "Iä",
+        "spanish": "Sí",
+        "note": "Para responder de forma afirmativa."
+      }
+    ],
+    "unitId": 1
+  },
+  {
+    "id": 2,
+    "title": "Conoce a alguien",
+    "description": "Las primeras piezas para presentarte.",
+    "glyph": "Ме",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Мен",
+        "latin": "Men",
+        "spanish": "Yo",
+        "note": "El pronombre personal para hablar de ti."
+      },
+      {
+        "kazakh": "Сен",
+        "latin": "Sen",
+        "spanish": "Tú",
+        "note": "Se utiliza en situaciones informales."
+      },
+      {
+        "kazakh": "Атым",
+        "latin": "Atym",
+        "spanish": "Mi nombre",
+        "note": "«Менің атым…» significa «Mi nombre es…»."
+      }
+    ],
+    "unitId": 1
+  },
+  {
+    "id": 3,
+    "title": "Uno, dos, tres",
+    "description": "Empieza a contar en kazajo.",
+    "glyph": "Үш",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Бір",
+        "latin": "Bir",
+        "spanish": "Uno",
+        "note": "El primer número. También tu primer paso."
+      },
+      {
+        "kazakh": "Екі",
+        "latin": "Eki",
+        "spanish": "Dos",
+        "note": "Dos palabras más cerca de conversar."
+      },
+      {
+        "kazakh": "Үш",
+        "latin": "Üş",
+        "spanish": "Tres",
+        "note": "La «ү» se pronuncia con los labios redondeados."
+      }
+    ],
+    "unitId": 1
+  },
+  {
+    "id": 4,
+    "unitId": 2,
+    "title": "Respuestas cotidianas",
+    "description": "Di que no, responde y llega a un acuerdo.",
+    "glyph": "Жо",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Жоқ",
+        "latin": "Joq",
+        "spanish": "No",
+        "note": "Una respuesta negativa; es el contrario de «Иә»."
+      },
+      {
+        "kazakh": "Жақсы",
+        "latin": "Jaqsy",
+        "spanish": "Bien",
+        "note": "También significa «bueno»; sirve para responder cómo estás."
+      },
+      {
+        "kazakh": "Жарайды",
+        "latin": "Jaraydy",
+        "spanish": "De acuerdo",
+        "note": "Para aceptar una propuesta o confirmar un plan."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "unitId": 2,
+    "title": "Saludar y despedirse",
+    "description": "Elige un saludo según el momento del día.",
+    "glyph": "Қа",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Қайырлы таң",
+        "latin": "Qaiyrly tañ",
+        "spanish": "Buenos días",
+        "note": "Un saludo para las primeras horas del día."
+      },
+      {
+        "kazakh": "Қайырлы кеш",
+        "latin": "Qaiyrly keş",
+        "spanish": "Buenas tardes o noches",
+        "note": "Se usa al saludar al final del día, no para desear un buen descanso."
+      },
+      {
+        "kazakh": "Сау болыңыз",
+        "latin": "Sau bolyñyz",
+        "spanish": "Adiós, formal",
+        "note": "Una despedida respetuosa dirigida a una persona."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "unitId": 2,
+    "title": "Hablar de otras personas",
+    "description": "Amplía los pronombres que ya conoces.",
+    "glyph": "Сі",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Сіз",
+        "latin": "Siz",
+        "spanish": "Usted",
+        "note": "La forma respetuosa de dirigirte a una persona."
+      },
+      {
+        "kazakh": "Біз",
+        "latin": "Biz",
+        "spanish": "Nosotros",
+        "note": "Incluye a quien habla y a otras personas."
+      },
+      {
+        "kazakh": "Олар",
+        "latin": "Olar",
+        "spanish": "Ellos o ellas",
+        "note": "El mismo pronombre sirve para ambos géneros."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "unitId": 2,
+    "title": "Tus primeras preguntas",
+    "description": "Pregunta por personas, cosas y lugares.",
+    "glyph": "Кі",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Кім?",
+        "latin": "Kim?",
+        "spanish": "¿Quién?",
+        "note": "Para preguntar por una persona."
+      },
+      {
+        "kazakh": "Не?",
+        "latin": "Ne?",
+        "spanish": "¿Qué?",
+        "note": "Para preguntar por una cosa o una idea."
+      },
+      {
+        "kazakh": "Қайда?",
+        "latin": "Qaida?",
+        "spanish": "¿Dónde?",
+        "note": "Para localizar un lugar o una persona."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "unitId": 2,
+    "title": "Personas a tu alrededor",
+    "description": "Pon nombre a quienes conoces.",
+    "glyph": "Ад",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Адам",
+        "latin": "Adam",
+        "spanish": "Persona",
+        "note": "Una palabra general para un ser humano."
+      },
+      {
+        "kazakh": "Дос",
+        "latin": "Dos",
+        "spanish": "Amigo",
+        "note": "Puede referirse a un amigo o a una amiga."
+      },
+      {
+        "kazakh": "Мұғалім",
+        "latin": "Mūğalim",
+        "spanish": "Profesor",
+        "note": "No distingue entre profesor y profesora."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "unitId": 3,
+    "title": "Del cuatro al seis",
+    "description": "Continúa la cuenta después del tres.",
+    "glyph": "Тө",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Төрт",
+        "latin": "Tört",
+        "spanish": "Cuatro",
+        "note": "Va después de «үш», tres."
+      },
+      {
+        "kazakh": "Бес",
+        "latin": "Bes",
+        "spanish": "Cinco",
+        "note": "Prueba a contar los dedos de una mano."
+      },
+      {
+        "kazakh": "Алты",
+        "latin": "Alty",
+        "spanish": "Seis",
+        "note": "Empieza por una vocal y termina en «ы»."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "unitId": 3,
+    "title": "Del siete al nueve",
+    "description": "Acércate a tu primera decena.",
+    "glyph": "Же",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Жеті",
+        "latin": "Jeti",
+        "spanish": "Siete",
+        "note": "Es el número de días de una semana."
+      },
+      {
+        "kazakh": "Сегіз",
+        "latin": "Segiz",
+        "spanish": "Ocho",
+        "note": "Fíjate en la «і» de la segunda sílaba."
+      },
+      {
+        "kazakh": "Тоғыз",
+        "latin": "Toğyz",
+        "spanish": "Nueve",
+        "note": "Presta atención a «ғ», diferente de «г»."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "unitId": 3,
+    "title": "Cero, diez y cien",
+    "description": "Aprende tres números de referencia.",
+    "glyph": "Нө",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Нөл",
+        "latin": "Nöl",
+        "spanish": "Cero",
+        "note": "Indica que no hay ninguna unidad."
+      },
+      {
+        "kazakh": "Он",
+        "latin": "On",
+        "spanish": "Diez",
+        "note": "Once se forma como «он бір»."
+      },
+      {
+        "kazakh": "Жүз",
+        "latin": "Jüz",
+        "spanish": "Cien",
+        "note": "La «ү» aparece también en «үш», tres."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "unitId": 3,
+    "title": "Contar de diez en diez",
+    "description": "Tres cantidades útiles para precios.",
+    "glyph": "Жи",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Жиырма",
+        "latin": "Jiyrma",
+        "spanish": "Veinte",
+        "note": "Veintiuno se forma como «жиырма бір»."
+      },
+      {
+        "kazakh": "Отыз",
+        "latin": "Otyz",
+        "spanish": "Treinta",
+        "note": "Treinta y dos se dice «отыз екі»."
+      },
+      {
+        "kazakh": "Елу",
+        "latin": "Elu",
+        "spanish": "Cincuenta",
+        "note": "Una decena frecuente al hablar de cantidades."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "unitId": 3,
+    "title": "Primero, segundo, tercero",
+    "description": "Distingue cantidad y posición.",
+    "glyph": "Бі",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Бірінші",
+        "latin": "Birinşi",
+        "spanish": "Primero",
+        "note": "Indica el primer lugar, no la cantidad uno."
+      },
+      {
+        "kazakh": "Екінші",
+        "latin": "Ekinşi",
+        "spanish": "Segundo",
+        "note": "Se forma a partir de «екі», dos."
+      },
+      {
+        "kazakh": "Үшінші",
+        "latin": "Üşinşi",
+        "spanish": "Tercero",
+        "note": "Se forma a partir de «үш», tres."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "unitId": 4,
+    "title": "La familia cercana",
+    "description": "Nombra a las personas de casa.",
+    "glyph": "Ан",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Ана",
+        "latin": "Ana",
+        "spanish": "Madre",
+        "note": "Una forma de nombrar a la madre."
+      },
+      {
+        "kazakh": "Әке",
+        "latin": "Äke",
+        "spanish": "Padre",
+        "note": "«Ә» es una letra propia del kazajo."
+      },
+      {
+        "kazakh": "Бала",
+        "latin": "Bala",
+        "spanish": "Niño o niña",
+        "note": "También puede significar hijo o hija según el contexto."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "unitId": 4,
+    "title": "Abuelos y nietos",
+    "description": "Habla de distintas generaciones.",
+    "glyph": "Ат",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Ата",
+        "latin": "Ata",
+        "spanish": "Abuelo",
+        "note": "Una palabra para la generación de tus abuelos."
+      },
+      {
+        "kazakh": "Әже",
+        "latin": "Äje",
+        "spanish": "Abuela",
+        "note": "Empieza por la misma vocal que «әке», padre."
+      },
+      {
+        "kazakh": "Немере",
+        "latin": "Nemere",
+        "spanish": "Nieto o nieta",
+        "note": "La palabra no cambia según el género del nieto."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "unitId": 4,
+    "title": "Hermanos mayores y menores",
+    "description": "La edad también importa al nombrar hermanos.",
+    "glyph": "Ағ",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Аға",
+        "latin": "Ağa",
+        "spanish": "Hermano mayor",
+        "note": "Se distingue del hermano menor."
+      },
+      {
+        "kazakh": "Әпке",
+        "latin": "Äpke",
+        "spanish": "Hermana mayor",
+        "note": "Para una hermana de más edad."
+      },
+      {
+        "kazakh": "Іні",
+        "latin": "Ini",
+        "spanish": "Hermano menor",
+        "note": "Compárala con «аға», hermano mayor."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "unitId": 4,
+    "title": "Hijos y hermanas",
+    "description": "Aprende relaciones familiares más concretas.",
+    "glyph": "Ұл",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Ұл",
+        "latin": "Ūl",
+        "spanish": "Hijo varón",
+        "note": "También puede significar muchacho según el contexto."
+      },
+      {
+        "kazakh": "Қыз",
+        "latin": "Qyz",
+        "spanish": "Hija",
+        "note": "También significa chica; aquí se usa como parentesco."
+      },
+      {
+        "kazakh": "Қарындас",
+        "latin": "Qaryndas",
+        "spanish": "Hermana menor de un hombre",
+        "note": "Un hombre llama así a su hermana menor; una mujer usa «сіңлі»."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "unitId": 4,
+    "title": "La familia en conjunto",
+    "description": "Agrupa a las personas que te rodean.",
+    "glyph": "От",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Отбасы",
+        "latin": "Otbasy",
+        "spanish": "Familia",
+        "note": "La palabra general para hablar de la familia."
+      },
+      {
+        "kazakh": "Ата-ана",
+        "latin": "Ata-ana",
+        "spanish": "Padres",
+        "note": "Una palabra compuesta para referirse a los progenitores."
+      },
+      {
+        "kazakh": "Туыс",
+        "latin": "Tuys",
+        "spanish": "Pariente",
+        "note": "Un familiar sin especificar el parentesco."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "unitId": 5,
+    "title": "Algo para beber",
+    "description": "Empieza por tres bebidas cotidianas.",
+    "glyph": "Су",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Су",
+        "latin": "Su",
+        "spanish": "Agua",
+        "note": "Una palabra corta y muy útil al viajar."
+      },
+      {
+        "kazakh": "Шай",
+        "latin": "Şai",
+        "spanish": "Té",
+        "note": "La «ш» se representa aquí con «ş»."
+      },
+      {
+        "kazakh": "Сүт",
+        "latin": "Süt",
+        "spanish": "Leche",
+        "note": "No confundas la vocal «ү» con la «у» de «су»."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "unitId": 5,
+    "title": "En la mesa",
+    "description": "Reconoce alimentos de una comida.",
+    "glyph": "На",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Нан",
+        "latin": "Nan",
+        "spanish": "Pan",
+        "note": "Puedes encontrar esta palabra en una tienda o una mesa."
+      },
+      {
+        "kazakh": "Ет",
+        "latin": "Et",
+        "spanish": "Carne",
+        "note": "El animal se puede indicar antes de esta palabra."
+      },
+      {
+        "kazakh": "Балық",
+        "latin": "Balyq",
+        "spanish": "Pescado",
+        "note": "La misma palabra se usa para el pez vivo."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "unitId": 5,
+    "title": "Fruta para merendar",
+    "description": "Tres sabores que encontrarás en el mercado.",
+    "glyph": "Ал",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Алма",
+        "latin": "Alma",
+        "spanish": "Manzana",
+        "note": "Una fruta cuyo nombre es fácil de reconocer."
+      },
+      {
+        "kazakh": "Алмұрт",
+        "latin": "Almūrt",
+        "spanish": "Pera",
+        "note": "Empieza parecido a «алма», pero es otra fruta."
+      },
+      {
+        "kazakh": "Жүзім",
+        "latin": "Jüzim",
+        "spanish": "Uvas",
+        "note": "Fíjate en sus vocales «ү» e «і»."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "unitId": 5,
+    "title": "Verduras de cada día",
+    "description": "Haz una pequeña lista de la compra.",
+    "glyph": "Ка",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Картоп",
+        "latin": "Kartop",
+        "spanish": "Patata",
+        "note": "Un ingrediente habitual en muchas recetas."
+      },
+      {
+        "kazakh": "Сәбіз",
+        "latin": "Säbiz",
+        "spanish": "Zanahoria",
+        "note": "Practica la diferencia entre «ә» e «і»."
+      },
+      {
+        "kazakh": "Пияз",
+        "latin": "Piyaz",
+        "spanish": "Cebolla",
+        "note": "Una palabra útil para indicar un ingrediente."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "unitId": 5,
+    "title": "En la despensa",
+    "description": "Reconoce ingredientes básicos.",
+    "glyph": "Тұ",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Тұз",
+        "latin": "Tūz",
+        "spanish": "Sal",
+        "note": "La «ұ» se representa aquí con «ū»."
+      },
+      {
+        "kazakh": "Қант",
+        "latin": "Qant",
+        "spanish": "Azúcar",
+        "note": "No la confundas con la sal al preparar el té."
+      },
+      {
+        "kazakh": "Күріш",
+        "latin": "Küriş",
+        "spanish": "Arroz",
+        "note": "Termina con el sonido de «ш»."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "unitId": 6,
+    "title": "Tu casa",
+    "description": "Empieza a describir dónde vives.",
+    "glyph": "Үй",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Үй",
+        "latin": "Üi",
+        "spanish": "Casa",
+        "note": "También se usa con el sentido de hogar."
+      },
+      {
+        "kazakh": "Бөлме",
+        "latin": "Bölme",
+        "spanish": "Habitación",
+        "note": "Una parte de una vivienda o de otro edificio."
+      },
+      {
+        "kazakh": "Есік",
+        "latin": "Esik",
+        "spanish": "Puerta",
+        "note": "Puedes asociarla con entrar y salir de casa."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "unitId": 6,
+    "title": "Dentro de una habitación",
+    "description": "Mira a tu alrededor y reconoce sus partes.",
+    "glyph": "Те",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Терезе",
+        "latin": "Tereze",
+        "spanish": "Ventana",
+        "note": "Repite sus tres sílabas despacio."
+      },
+      {
+        "kazakh": "Қабырға",
+        "latin": "Qabyrğa",
+        "spanish": "Pared",
+        "note": "Aquí se usa para una pared de la casa."
+      },
+      {
+        "kazakh": "Еден",
+        "latin": "Eden",
+        "spanish": "Suelo",
+        "note": "La superficie interior por la que caminas."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "unitId": 6,
+    "title": "Los muebles",
+    "description": "Tres objetos para una casa acogedora.",
+    "glyph": "Үс",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Үстел",
+        "latin": "Üstel",
+        "spanish": "Mesa",
+        "note": "Empieza por «ү», como «үй»."
+      },
+      {
+        "kazakh": "Орындық",
+        "latin": "Oryndyq",
+        "spanish": "Silla",
+        "note": "Apréndela junto a «үстел», mesa."
+      },
+      {
+        "kazakh": "Төсек",
+        "latin": "Tösek",
+        "spanish": "Cama",
+        "note": "Un mueble para descansar y dormir."
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "unitId": 6,
+    "title": "Las estancias",
+    "description": "Distingue las zonas de una vivienda.",
+    "glyph": "Ас",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Асүй",
+        "latin": "Asüi",
+        "spanish": "Cocina",
+        "note": "La estancia donde se prepara la comida."
+      },
+      {
+        "kazakh": "Жуынатын бөлме",
+        "latin": "Juynatyn bölme",
+        "spanish": "Cuarto de baño",
+        "note": "«Бөлме» aparece con el significado de habitación."
+      },
+      {
+        "kazakh": "Қонақ бөлме",
+        "latin": "Qonaq bölme",
+        "spanish": "Salón",
+        "note": "La habitación de la casa donde se reciben visitas."
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "unitId": 6,
+    "title": "Objetos de casa",
+    "description": "Palabras pequeñas para cosas útiles.",
+    "glyph": "Кі",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Кілт",
+        "latin": "Kilt",
+        "spanish": "Llave",
+        "note": "La llave que abre una puerta."
+      },
+      {
+        "kazakh": "Шам",
+        "latin": "Şam",
+        "spanish": "Lámpara",
+        "note": "Un objeto que da luz."
+      },
+      {
+        "kazakh": "Айна",
+        "latin": "Aina",
+        "spanish": "Espejo",
+        "note": "El objeto en el que ves tu reflejo."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "unitId": 7,
+    "title": "Dónde vivimos",
+    "description": "Nombra los lugares de tu entorno.",
+    "glyph": "Қа",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Қала",
+        "latin": "Qala",
+        "spanish": "Ciudad",
+        "note": "Un lugar urbano con calles y edificios."
+      },
+      {
+        "kazakh": "Ауыл",
+        "latin": "Auyl",
+        "spanish": "Pueblo",
+        "note": "Para una localidad rural."
+      },
+      {
+        "kazakh": "Көше",
+        "latin": "Köşe",
+        "spanish": "Calle",
+        "note": "Útil al preguntar por una dirección."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "unitId": 7,
+    "title": "Lugares importantes",
+    "description": "Reconoce servicios que puedes necesitar.",
+    "glyph": "Ме",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Мектеп",
+        "latin": "Mektep",
+        "spanish": "Escuela",
+        "note": "El lugar al que van los alumnos para aprender."
+      },
+      {
+        "kazakh": "Аурухана",
+        "latin": "Aurukhana",
+        "spanish": "Hospital",
+        "note": "Un lugar de atención sanitaria."
+      },
+      {
+        "kazakh": "Дәріхана",
+        "latin": "Därikhana",
+        "spanish": "Farmacia",
+        "note": "Compárala con «аурухана»: son lugares diferentes."
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "unitId": 7,
+    "title": "De compras por la ciudad",
+    "description": "Encuentra lo que necesitas.",
+    "glyph": "Дү",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Дүкен",
+        "latin": "Düken",
+        "spanish": "Tienda",
+        "note": "El nombre general de un comercio."
+      },
+      {
+        "kazakh": "Базар",
+        "latin": "Bazar",
+        "spanish": "Mercado",
+        "note": "Puede recordarte a la palabra española «bazar»."
+      },
+      {
+        "kazakh": "Банк",
+        "latin": "Bank",
+        "spanish": "Banco",
+        "note": "Aquí se refiere a la entidad financiera."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "unitId": 7,
+    "title": "Cómo viajar",
+    "description": "Elige tu medio de transporte.",
+    "glyph": "Ав",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Автобус",
+        "latin": "Avtobus",
+        "spanish": "Autobús",
+        "note": "Una palabra parecida a la española."
+      },
+      {
+        "kazakh": "Пойыз",
+        "latin": "Poiyz",
+        "spanish": "Tren",
+        "note": "Para viajar sobre raíles."
+      },
+      {
+        "kazakh": "Ұшақ",
+        "latin": "Ūşaq",
+        "spanish": "Avión",
+        "note": "Presta atención a la vocal inicial «ұ»."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "unitId": 7,
+    "title": "Encontrar el camino",
+    "description": "Tres indicaciones para orientarte.",
+    "glyph": "Оң",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Оң",
+        "latin": "Oñ",
+        "spanish": "Derecha",
+        "note": "Para el lado derecho, se usa también «оң жақ»."
+      },
+      {
+        "kazakh": "Сол",
+        "latin": "Sol",
+        "spanish": "Izquierda",
+        "note": "Para el lado izquierdo, se usa también «сол жақ»."
+      },
+      {
+        "kazakh": "Тура",
+        "latin": "Tura",
+        "spanish": "Todo recto",
+        "note": "Útil cuando alguien te explica cómo llegar."
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "unitId": 8,
+    "title": "Mirar al cielo",
+    "description": "Descubre tres palabras del paisaje.",
+    "glyph": "Кү",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Күн",
+        "latin": "Kün",
+        "spanish": "Sol",
+        "note": "Aquí significa sol; también puede significar día."
+      },
+      {
+        "kazakh": "Ай",
+        "latin": "Ai",
+        "spanish": "Luna",
+        "note": "Aquí significa luna; también puede significar mes."
+      },
+      {
+        "kazakh": "Жұлдыз",
+        "latin": "Jūldyz",
+        "spanish": "Estrella",
+        "note": "Algo que puedes ver en el cielo de noche."
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "unitId": 8,
+    "title": "Paisajes de Kazajistán",
+    "description": "Nombra montañas y masas de agua.",
+    "glyph": "Та",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Тау",
+        "latin": "Tau",
+        "spanish": "Montaña",
+        "note": "Una palabra corta para un gran elemento del paisaje."
+      },
+      {
+        "kazakh": "Өзен",
+        "latin": "Özen",
+        "spanish": "Río",
+        "note": "El agua que fluye por un cauce."
+      },
+      {
+        "kazakh": "Көл",
+        "latin": "Köl",
+        "spanish": "Lago",
+        "note": "Compárala con «өзен»: un lago no es un río."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "unitId": 8,
+    "title": "Entre árboles y flores",
+    "description": "Descubre un poco de vocabulario verde.",
+    "glyph": "Ағ",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Ағаш",
+        "latin": "Ağaş",
+        "spanish": "Árbol",
+        "note": "También puede significar madera según el contexto."
+      },
+      {
+        "kazakh": "Гүл",
+        "latin": "Gül",
+        "spanish": "Flor",
+        "note": "Se escribe con «г», diferente de la «ғ» de «ағаш»."
+      },
+      {
+        "kazakh": "Орман",
+        "latin": "Orman",
+        "spanish": "Bosque",
+        "note": "Un lugar con muchos árboles."
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "unitId": 8,
+    "title": "El tiempo que hace",
+    "description": "Reconoce lluvia, nieve y viento.",
+    "glyph": "Жа",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Жаңбыр",
+        "latin": "Jañbyr",
+        "spanish": "Lluvia",
+        "note": "Presta atención a «ң», un sonido nasal."
+      },
+      {
+        "kazakh": "Қар",
+        "latin": "Qar",
+        "spanish": "Nieve",
+        "note": "Una palabra breve para un paisaje blanco."
+      },
+      {
+        "kazakh": "Жел",
+        "latin": "Jel",
+        "spanish": "Viento",
+        "note": "Empieza con «ж», igual que «жаңбыр»."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "unitId": 8,
+    "title": "De primavera a otoño",
+    "description": "Sigue el cambio de las estaciones.",
+    "glyph": "Кө",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Көктем",
+        "latin": "Köktem",
+        "spanish": "Primavera",
+        "note": "La estación que llega después del invierno."
+      },
+      {
+        "kazakh": "Жаз",
+        "latin": "Jaz",
+        "spanish": "Verano",
+        "note": "Aquí es el nombre de la estación."
+      },
+      {
+        "kazakh": "Күз",
+        "latin": "Küz",
+        "spanish": "Otoño",
+        "note": "Termina con «з», como «жаз»."
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "unitId": 9,
+    "title": "Ayer, hoy y mañana",
+    "description": "Sitúa tus planes en el tiempo.",
+    "glyph": "Бү",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Бүгін",
+        "latin": "Bügin",
+        "spanish": "Hoy",
+        "note": "El día en el que estás hablando."
+      },
+      {
+        "kazakh": "Ертең",
+        "latin": "Erteñ",
+        "spanish": "Mañana",
+        "note": "El día siguiente, no una parte del día."
+      },
+      {
+        "kazakh": "Кеше",
+        "latin": "Keşe",
+        "spanish": "Ayer",
+        "note": "El día anterior al de hoy."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "unitId": 9,
+    "title": "Momentos del día",
+    "description": "Distingue la mañana, la tarde y la noche.",
+    "glyph": "Та",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Таң",
+        "latin": "Tañ",
+        "spanish": "Mañana, parte del día",
+        "note": "También puede referirse al amanecer; no es el día siguiente."
+      },
+      {
+        "kazakh": "Кеш",
+        "latin": "Keş",
+        "spanish": "Tarde o anochecer",
+        "note": "El tramo final del día antes de la noche."
+      },
+      {
+        "kazakh": "Түн",
+        "latin": "Tün",
+        "spanish": "Noche",
+        "note": "La parte del día asociada a la oscuridad."
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "unitId": 9,
+    "title": "El inicio de la semana",
+    "description": "Aprende los tres primeros días.",
+    "glyph": "Дү",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Дүйсенбі",
+        "latin": "Düisenbi",
+        "spanish": "Lunes",
+        "note": "El primer día de la semana en este calendario."
+      },
+      {
+        "kazakh": "Сейсенбі",
+        "latin": "Seisenbi",
+        "spanish": "Martes",
+        "note": "Cambia el principio respecto a lunes."
+      },
+      {
+        "kazakh": "Сәрсенбі",
+        "latin": "Särsenbi",
+        "spanish": "Miércoles",
+        "note": "Comparte la terminación «сенбі» con otros días."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "unitId": 9,
+    "title": "Se acerca el fin de semana",
+    "description": "Continúa con jueves, viernes y sábado.",
+    "glyph": "Бе",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Бейсенбі",
+        "latin": "Beisenbi",
+        "spanish": "Jueves",
+        "note": "Va después de «сәрсенбі», miércoles."
+      },
+      {
+        "kazakh": "Жұма",
+        "latin": "Jūma",
+        "spanish": "Viernes",
+        "note": "Su forma es más corta que la de los días vecinos."
+      },
+      {
+        "kazakh": "Сенбі",
+        "latin": "Senbi",
+        "spanish": "Sábado",
+        "note": "Puedes reconocer esta forma en otros nombres de días."
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "unitId": 9,
+    "title": "Pensar en el calendario",
+    "description": "Completa la semana y mira más allá.",
+    "glyph": "Же",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Жексенбі",
+        "latin": "Jeksenbi",
+        "spanish": "Domingo",
+        "note": "El día que sigue a «сенбі», sábado."
+      },
+      {
+        "kazakh": "Апта",
+        "latin": "Apta",
+        "spanish": "Semana",
+        "note": "Un período de siete días."
+      },
+      {
+        "kazakh": "Жыл",
+        "latin": "Jyl",
+        "spanish": "Año",
+        "note": "Un período de doce meses."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "unitId": 10,
+    "title": "Aprender cada día",
+    "description": "Tres acciones para seguir estudiando.",
+    "glyph": "Оқ",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Оқу",
+        "latin": "Oqu",
+        "spanish": "Leer",
+        "note": "También puede significar estudiar; aquí practicamos leer."
+      },
+      {
+        "kazakh": "Жазу",
+        "latin": "Jazu",
+        "spanish": "Escribir",
+        "note": "Observa la diferencia con «жаз», verano."
+      },
+      {
+        "kazakh": "Тыңдау",
+        "latin": "Tyñdau",
+        "spanish": "Escuchar",
+        "note": "Un verbo útil en las instrucciones de una clase."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "unitId": 10,
+    "title": "Hablar y comprender",
+    "description": "Describe cómo te comunicas.",
+    "glyph": "Сө",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Сөйлеу",
+        "latin": "Söileu",
+        "spanish": "Hablar",
+        "note": "Expresarte mediante palabras."
+      },
+      {
+        "kazakh": "Көру",
+        "latin": "Köru",
+        "spanish": "Ver",
+        "note": "Una acción relacionada con la vista."
+      },
+      {
+        "kazakh": "Білу",
+        "latin": "Bilu",
+        "spanish": "Saber",
+        "note": "Expresa conocimiento."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "unitId": 10,
+    "title": "Ir y venir",
+    "description": "Tres verbos para ponerte en movimiento.",
+    "glyph": "Ке",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Келу",
+        "latin": "Kelu",
+        "spanish": "Venir",
+        "note": "Movimiento hacia el lugar tomado como referencia."
+      },
+      {
+        "kazakh": "Кету",
+        "latin": "Ketu",
+        "spanish": "Irse",
+        "note": "Pone el acento en marcharse de un lugar."
+      },
+      {
+        "kazakh": "Бару",
+        "latin": "Baru",
+        "spanish": "Ir",
+        "note": "Movimiento hacia un destino."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "unitId": 10,
+    "title": "Tu rutina diaria",
+    "description": "Acciones que repites cada día.",
+    "glyph": "Же",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Жеу",
+        "latin": "Jeu",
+        "spanish": "Comer",
+        "note": "Puedes asociarla con «нан», pan."
+      },
+      {
+        "kazakh": "Ішу",
+        "latin": "Işu",
+        "spanish": "Beber",
+        "note": "Puedes asociarla con «су», agua."
+      },
+      {
+        "kazakh": "Ұйықтау",
+        "latin": "Ūiyqtau",
+        "spanish": "Dormir",
+        "note": "Una acción para descansar durante la noche."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "unitId": 10,
+    "title": "Acciones sencillas",
+    "description": "Abre, cierra y aprende a esperar.",
+    "glyph": "Аш",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Ашу",
+        "latin": "Aşu",
+        "spanish": "Abrir",
+        "note": "Aquí es el verbo abrir, por ejemplo una puerta."
+      },
+      {
+        "kazakh": "Жабу",
+        "latin": "Jabu",
+        "spanish": "Cerrar",
+        "note": "La acción contraria a abrir."
+      },
+      {
+        "kazakh": "Күту",
+        "latin": "Kütu",
+        "spanish": "Esperar",
+        "note": "Lo que haces antes de que llegue una persona o un transporte."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "unitId": 11,
+    "title": "Colores a tu alrededor",
+    "description": "Reconoce tres colores frecuentes.",
+    "glyph": "Қы",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Қызыл",
+        "latin": "Qyzyl",
+        "spanish": "Rojo",
+        "note": "Para describir el color de un objeto."
+      },
+      {
+        "kazakh": "Көк",
+        "latin": "Kök",
+        "spanish": "Azul",
+        "note": "Aquí es un color; su significado puede variar con el contexto."
+      },
+      {
+        "kazakh": "Жасыл",
+        "latin": "Jasyl",
+        "spanish": "Verde",
+        "note": "Puedes asociarlo con las hojas de un árbol."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "unitId": 11,
+    "title": "Más colores",
+    "description": "Amplía la forma de describir lo que ves.",
+    "glyph": "Ақ",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Ақ",
+        "latin": "Aq",
+        "spanish": "Blanco",
+        "note": "Compárala con el color de la nieve."
+      },
+      {
+        "kazakh": "Қара",
+        "latin": "Qara",
+        "spanish": "Negro",
+        "note": "Aquí es el nombre del color."
+      },
+      {
+        "kazakh": "Сары",
+        "latin": "Sary",
+        "spanish": "Amarillo",
+        "note": "Un color que puedes asociar con el sol."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "unitId": 11,
+    "title": "Cómo son las cosas",
+    "description": "Describe tamaño y novedad.",
+    "glyph": "Үл",
+    "color": "butter",
+    "words": [
+      {
+        "kazakh": "Үлкен",
+        "latin": "Ülken",
+        "spanish": "Grande",
+        "note": "También puede referirse a alguien de más edad."
+      },
+      {
+        "kazakh": "Кішкентай",
+        "latin": "Kişkentai",
+        "spanish": "Pequeño",
+        "note": "Para describir algo de poco tamaño."
+      },
+      {
+        "kazakh": "Жаңа",
+        "latin": "Jaña",
+        "spanish": "Nuevo",
+        "note": "Algo que acaba de aparecer o que no es antiguo."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "unitId": 11,
+    "title": "Hablar de temperatura",
+    "description": "Distingue tres sensaciones térmicas.",
+    "glyph": "Ыс",
+    "color": "peach",
+    "words": [
+      {
+        "kazakh": "Ыстық",
+        "latin": "Ystyq",
+        "spanish": "Caliente",
+        "note": "Puede describir una bebida o un día de mucho calor."
+      },
+      {
+        "kazakh": "Суық",
+        "latin": "Suyq",
+        "spanish": "Frío",
+        "note": "La idea opuesta a caliente."
+      },
+      {
+        "kazakh": "Жылы",
+        "latin": "Jyly",
+        "spanish": "Templado",
+        "note": "Algo cálido o tibio, sin llegar a estar muy caliente."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "unitId": 11,
+    "title": "Pedir ayuda para aprender",
+    "description": "Tres frases para seguir una conversación.",
+    "glyph": "Ме",
+    "color": "sage",
+    "words": [
+      {
+        "kazakh": "Мен түсінбеймін",
+        "latin": "Men tüsinbeimin",
+        "spanish": "No entiendo",
+        "note": "Cuando no has comprendido lo que te han dicho."
+      },
+      {
+        "kazakh": "Қайталаңызшы",
+        "latin": "Qaitalañyzşy",
+        "spanish": "Repita, por favor",
+        "note": "Una petición respetuosa para oír algo otra vez."
+      },
+      {
+        "kazakh": "Көмектесіңізші",
+        "latin": "Kömektesiñizşi",
+        "spanish": "Ayúdeme, por favor",
+        "note": "Una forma cortés de pedir ayuda."
+      }
+    ]
+  }
+]

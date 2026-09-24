@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
@@ -19,106 +19,22 @@ import {
   X,
 } from "lucide-react";
 import "./styles.css";
+import {
+  lessons,
+  units,
+  lessonNumber,
+  type Word,
+  type Lesson,
+} from "./data/course";
 
 type Tab = "home" | "learn" | "practice" | "progress";
-type Word = { kazakh: string; latin: string; spanish: string; note: string };
-type Lesson = {
-  id: number;
-  title: string;
-  description: string;
-  glyph: string;
-  color: string;
-  words: Word[];
-};
 type Session = { lessonId: number; step: number; practice: boolean };
 type Progress = {
   completed: number[];
   days: string[];
   session: Session | null;
 };
-const lessons: Lesson[] = [
-  {
-    id: 1,
-    title: "Saludos esenciales",
-    description: "Una conversación empieza con un hola.",
-    glyph: "Сә",
-    color: "peach",
-    words: [
-      {
-        kazakh: "Сәлем",
-        latin: "Sälem",
-        spanish: "Hola",
-        note: "Un saludo informal para amigos y personas cercanas.",
-      },
-      {
-        kazakh: "Рахмет",
-        latin: "Raqmet",
-        spanish: "Gracias",
-        note: "Una pequeña palabra que abre muchas puertas.",
-      },
-      {
-        kazakh: "Иә",
-        latin: "Iä",
-        spanish: "Sí",
-        note: "Para responder de forma afirmativa.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Conoce a alguien",
-    description: "Las primeras piezas para presentarte.",
-    glyph: "Ме",
-    color: "sage",
-    words: [
-      {
-        kazakh: "Мен",
-        latin: "Men",
-        spanish: "Yo",
-        note: "El pronombre personal para hablar de ti.",
-      },
-      {
-        kazakh: "Сен",
-        latin: "Sen",
-        spanish: "Tú",
-        note: "Se utiliza en situaciones informales.",
-      },
-      {
-        kazakh: "Атым",
-        latin: "Atym",
-        spanish: "Mi nombre",
-        note: "«Менің атым…» significa «Mi nombre es…».",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Uno, dos, tres",
-    description: "Empieza a contar en kazajo.",
-    glyph: "Үш",
-    color: "butter",
-    words: [
-      {
-        kazakh: "Бір",
-        latin: "Bir",
-        spanish: "Uno",
-        note: "El primer número. También tu primer paso.",
-      },
-      {
-        kazakh: "Екі",
-        latin: "Eki",
-        spanish: "Dos",
-        note: "Dos palabras más cerca de conversar.",
-      },
-      {
-        kazakh: "Үш",
-        latin: "Üş",
-        spanish: "Tres",
-        note: "La «ү» se pronuncia con los labios redondeados.",
-      },
-    ],
-  },
-];
+
 const emptyProgress: Progress = { completed: [], days: [], session: null };
 const storageKey = "qadam-progress-v2";
 function dateKey(date = new Date()) {
@@ -251,6 +167,9 @@ function App() {
   const heroLesson = progress.session
     ? lessons.find((l) => l.id === progress.session!.lessonId)!
     : nextLesson;
+  const nextIndex = lessons.findIndex((lesson) => lesson.id === nextLesson.id);
+  const pathStart = Math.min(nextIndex, Math.max(0, lessons.length - 3));
+  const nearbyLessons = lessons.slice(pathStart, pathStart + 3);
   const start = (lessonId: number, practice = false) => {
     setProgress((p) => ({
       ...p,
@@ -460,14 +379,14 @@ function App() {
                                 : "TU SIGUIENTE PASO"}
                           </span>
                           <p className="hero-number">
-                            LECCIÓN 0{heroLesson.id} <span>·</span> NIVEL
-                            INICIAL
+                            LECCIÓN {lessonNumber(heroLesson.id)} <span>·</span>{" "}
+                            NIVEL INICIAL
                           </p>
                           <h2>{heroLesson.title}</h2>
                           <p className="hero-description">
-                          {progress.completed.includes(heroLesson.id)
-                            ? "Tres palabras que ya conoces."
-                            : "Tres palabras nuevas."}
+                            {progress.completed.includes(heroLesson.id)
+                              ? "Tres palabras que ya conoces."
+                              : "Tres palabras nuevas."}
                             <br />
                             Muchas conversaciones por empezar.
                           </p>
@@ -540,11 +459,10 @@ function App() {
                         </button>
                       </div>
                       <div className="path-list">
-                        {lessons.map((lesson, index) => (
+                        {nearbyLessons.map((lesson) => (
                           <LessonRow
                             key={lesson.id}
                             lesson={lesson}
-                            index={index}
                             completed={progress.completed}
                             onStart={start}
                           />
@@ -596,61 +514,12 @@ function App() {
                 </section>
               )}
               {tab === "learn" && (
-                <section className="screen">
-                  <PageHeading
-                    eyebrow="TU RUTA DE APRENDIZAJE"
-                    title="Pequeños pasos."
-                    accent="Grandes comienzos."
-                    description="Empieza por lo esencial y construye sobre lo que ya sabes."
-                  />
-                  <div className="course-summary">
-                    <div>
-                      <span className="eyebrow">UNIDAD 01 · PRINCIPIANTE</span>
-                      <h2>Las primeras palabras</h2>
-                    </div>
-                    <span>
-                      {progress.completed.length} / {lessons.length}
-                    </span>
-                    <div className="progress-track">
-                      <span
-                        style={{
-                          width: `${(progress.completed.length / lessons.length) * 100}%`,
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div className="course-list">
-                    {lessons.map((lesson, index) => (
-                      <LessonRow
-                        key={lesson.id}
-                        lesson={lesson}
-                        index={index}
-                        completed={progress.completed}
-                        onStart={start}
-                        expanded
-                      />
-                    ))}
-                  </div>
-                  <button
-                    className="alphabet-banner"
-                    onClick={() => setAlphabet(true)}
-                  >
-                    <span className="alphabet-glyph" lang="kk">
-                      Ә
-                    </span>
-                    <span>
-                      <span className="eyebrow">ANTES DE EMPEZAR</span>
-                      <strong>Conoce el alfabeto</strong>
-                      <small>Las letras que hacen único al kazajo</small>
-                    </span>
-                    <ArrowRight size={20} />
-                  </button>
-                  <p className="footnote">
-                    Completa una lección para desbloquear el siguiente paso.
-                    <br />
-                    Puedes repetir las que ya has aprendido cuando quieras.
-                  </p>
-                </section>
+                <LearnView
+                  completed={progress.completed}
+                  nextLesson={nextLesson}
+                  onStart={start}
+                  onAlphabet={() => setAlphabet(true)}
+                />
               )}
               {tab === "practice" && (
                 <PracticeView
@@ -807,19 +676,142 @@ function PageHeading({
     </div>
   );
 }
+function UnitPicker({
+  value,
+  onChange,
+  availableUnits = units,
+  label = "Explorar por tema",
+}: {
+  value: number;
+  onChange: (id: number) => void;
+  availableUnits?: typeof units;
+  label?: string;
+}) {
+  return (
+    <label className="unit-picker">
+      <span>{label}</span>
+      <select
+        value={value}
+        onChange={(event) => onChange(Number(event.target.value))}
+      >
+        {availableUnits.map((unit) => (
+          <option key={unit.id} value={unit.id}>
+            {lessonNumber(unit.id)} · {unit.title}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
+function LearnView({
+  completed,
+  nextLesson,
+  onStart,
+  onAlphabet,
+}: {
+  completed: number[];
+  nextLesson: Lesson;
+  onStart: (id: number) => void;
+  onAlphabet: () => void;
+}) {
+  const [unitId, setUnitId] = useState(nextLesson.unitId);
+  const unit = units.find((item) => item.id === unitId)!;
+  const unitLessons = lessons.filter((lesson) => lesson.unitId === unitId);
+  const finished = unitLessons.filter((lesson) =>
+    completed.includes(lesson.id),
+  ).length;
+  return (
+    <section className="screen">
+      <PageHeading
+        eyebrow="TU RUTA DE APRENDIZAJE"
+        title="Pequeños pasos."
+        accent="Grandes comienzos."
+        description={`${lessons.length} lecciones, ${units.length} temas y ${lessons.reduce((count, lesson) => count + lesson.words.length, 0)} preguntas. Aprende a tu ritmo.`}
+      />
+      <div className="course-summary">
+        <div>
+          <span className="eyebrow">TU RECORRIDO COMPLETO</span>
+          <h2>Del primer hola a tu día a día</h2>
+        </div>
+        <span>
+          {completed.length} / {lessons.length}
+        </span>
+        <div
+          className="progress-track"
+          role="progressbar"
+          aria-label="Lecciones completadas"
+          aria-valuemin={0}
+          aria-valuemax={lessons.length}
+          aria-valuenow={completed.length}
+        >
+          <span
+            style={{ width: `${(completed.length / lessons.length) * 100}%` }}
+          />
+        </div>
+      </div>
+      <UnitPicker value={unitId} onChange={setUnitId} />
+      {unitId !== nextLesson.unitId && (
+        <button
+          className="text-button"
+          onClick={() => setUnitId(nextLesson.unitId)}
+        >
+          Ver mi siguiente paso
+          <ArrowRight size={17} />
+        </button>
+      )}
+      <div className="section-heading unit-heading">
+        <div>
+          <p className="eyebrow">UNIDAD {lessonNumber(unit.id)}</p>
+          <h2>{unit.title}</h2>
+        </div>
+        <span className="count-badge" role="status">
+          {finished} / {unitLessons.length}
+        </span>
+      </div>
+      <div className="course-list">
+        {unitLessons.map((lesson) => (
+          <LessonRow
+            key={lesson.id}
+            lesson={lesson}
+            completed={completed}
+            onStart={onStart}
+            expanded
+          />
+        ))}
+      </div>
+      <button className="alphabet-banner" onClick={onAlphabet}>
+        <span className="alphabet-glyph" lang="kk">
+          Ә
+        </span>
+        <span>
+          <span className="eyebrow">ANTES DE EMPEZAR</span>
+          <strong>Conoce el alfabeto</strong>
+          <small>Las letras que hacen único al kazajo</small>
+        </span>
+        <ArrowRight size={20} />
+      </button>
+      <p className="footnote">
+        Completa una lección para desbloquear el siguiente paso.
+        <br />
+        Puedes explorar todos los temas y repetir las lecciones completadas.
+      </p>
+    </section>
+  );
+}
+
 function LessonRow({
   lesson,
-  index,
   completed,
   onStart,
   expanded = false,
 }: {
   lesson: Lesson;
-  index: number;
   completed: number[];
   onStart: (id: number) => void;
   expanded?: boolean;
 }) {
+  const index = lessons.findIndex((item) => item.id === lesson.id);
   const done = completed.includes(lesson.id),
     locked = index > 0 && !completed.includes(lessons[index - 1].id);
   return (
@@ -839,7 +831,7 @@ function LessonRow({
       </span>
       <span className="path-copy">
         <span className="path-label">
-          LECCIÓN 0{lesson.id}
+          LECCIÓN {lessonNumber(lesson.id)}
           {done ? " · COMPLETADA" : !locked ? " · A TU ALCANCE" : ""}
         </span>
         <strong>{lesson.title}</strong>
@@ -848,7 +840,7 @@ function LessonRow({
         )}
         <small>
           {locked
-            ? `Completa la lección 0${lesson.id - 1}`
+            ? `Completa la lección ${lessonNumber(lessons[index - 1].id)}`
             : done
               ? "Volver a practicar"
               : "3 min · 3 palabras"}
@@ -933,6 +925,10 @@ function PracticeView({
 }) {
   const [query, setQuery] = useState("");
   const available = lessons.filter((l) => completed.includes(l.id));
+  const availableUnits = units.filter((unit) =>
+    available.some((lesson) => lesson.unitId === unit.id),
+  );
+  const [reviewUnitId, setReviewUnitId] = useState(availableUnits[0]?.id || 1);
   const normalize = (s: string) =>
     s
       .toLocaleLowerCase()
@@ -962,22 +958,38 @@ function PracticeView({
               <p>Tres preguntas para refrescar la memoria.</p>
             </div>
           </div>
+          {availableUnits.length > 1 && (
+            <UnitPicker
+              value={reviewUnitId}
+              onChange={setReviewUnitId}
+              availableUnits={availableUnits}
+              label="Tema para repasar"
+            />
+          )}
           <div className="practice-options">
-            {available.map((l) => (
-              <button
-                className="review-button"
-                key={l.id}
-                onClick={() => onStart(l.id, true)}
-              >
-                <RotateCcw size={17} />
-                {l.title}
-                <ArrowRight size={17} />
-              </button>
-            ))}
+            {available
+              .filter((lesson) => lesson.unitId === reviewUnitId)
+              .map((l) => (
+                <button
+                  className="review-button"
+                  key={l.id}
+                  onClick={() => onStart(l.id, true)}
+                >
+                  <RotateCcw size={17} />
+                  {l.title}
+                  <ArrowRight size={17} />
+                </button>
+              ))}
           </div>
           <div className="section-heading">
             <h2>Tu vocabulario</h2>
-            <span className="count-badge">{available.length * 3} palabras</span>
+            <span className="count-badge">
+              {available.reduce(
+                (count, lesson) => count + lesson.words.length,
+                0,
+              )}{" "}
+              entradas
+            </span>
           </div>
           <label className="search-field">
             <Search size={19} />
@@ -1058,11 +1070,14 @@ function LessonView({
     if (session.step === 5) onFinish();
     else onStep(session.step + 1);
   };
-  const choices = [
-    [1, 0, 2],
-    [0, 2, 1],
-    [2, 1, 0],
-  ][wordIndex].map((index) => lesson.words[index]);
+  const choices = useMemo(() => {
+    const options = [...lesson.words];
+    for (let index = options.length - 1; index > 0; index--) {
+      const other = Math.floor(Math.random() * (index + 1));
+      [options[index], options[other]] = [options[other], options[index]];
+    }
+    return options;
+  }, [lesson, wordIndex]);
   return (
     <section className="lesson-screen">
       <div className="lesson-top">
@@ -1094,7 +1109,7 @@ function LessonView({
         </p>
         <h1 ref={titleRef} tabIndex={-1}>
           {quiz
-            ? "¿Qué significa esta palabra?"
+            ? "¿Qué significa?"
             : [
                 "Todo empieza con una palabra.",
                 "Otra palabra, otra conexión.",
@@ -1107,7 +1122,9 @@ function LessonView({
             : "Lee, repite y tómate tu tiempo."}
         </p>
       </div>
-      <div className={`word-card ${quiz ? "quiz-card" : ""}`}>
+      <div
+        className={`word-card ${quiz ? "quiz-card" : ""} ${word.kazakh.length > 10 ? "long-word" : ""}`}
+      >
         <span className="word-language">ҚАЗАҚША · KAZAJO</span>
         <strong lang="kk">{word.kazakh}</strong>
         <span className="word-latin">{word.latin}</span>
